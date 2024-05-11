@@ -48,6 +48,9 @@ const MarketingPage = () => {
       <Button className="mt-6" size="lg" asChild>
         <Link href="/sign-up">Get Shark for free</Link>
       </Button>
+      <Button className="mt-6" size="lg" asChild>
+        <Link href="/select-org">select organization</Link>
+      </Button>
     </div>
   )
 }

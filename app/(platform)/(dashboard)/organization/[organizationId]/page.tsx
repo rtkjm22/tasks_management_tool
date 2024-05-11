@@ -1,8 +1,8 @@
-import { OrganizationSwitcher } from "@clerk/nextjs"
-import { auth } from "@clerk/nextjs/server"
+import { OrganizationSwitcher } from '@clerk/nextjs'
+import { auth } from '@clerk/nextjs/server'
 
 const organizationIdPage = () => {
-  const {userId, orgId} = auth()
+  const { userId, orgId } = auth()
 
   return (
     <div>
