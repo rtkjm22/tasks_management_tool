@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 const isProtectedRoute = createRouteMatcher(['/organization(.*)'])
 
 export default clerkMiddleware(
-  // TODO: Organizationsの修正が必要
+  // TODO: Organizationおよびログイン周りの修正
 //   (auth, req) => {
 //   // console.log(auth)
 //   // if (auth().userId && auth().isPublicRoute) {
