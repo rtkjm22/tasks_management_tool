@@ -2,7 +2,6 @@
 
 import { createBoard } from '@/actions/create-board'
 import { FormInput } from './form-input'
-import { useFormState } from 'react-dom'
 import { FormButton } from './form-button'
 import { useAction } from '@/hooks/use-action'
 
