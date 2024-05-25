@@ -26,30 +26,30 @@ export const useAction = <TInput, TOutput>(
     async (input: TInput) => {
       setIsLoading(true)
 
-      try {
-        const result = await action(input)
+      // try {
+      //   const result = await action(input)
 
-        if (!result) {
-          return
-        }
+      //   if (!result) {
+      //     return
+      //   }
 
-        if (result.fieldErrors) {
-          setFieldErrors(result.fieldErrors)
-        }
+      //   if (result.fieldErrors) {
+      //     setFieldErrors(result.fieldErrors)
+      //   }
 
-        if (result.error) {
-          setError(result.error)
-          options.onError?.(result.error)
-        }
+      //   if (result.error) {
+      //     setError(result.error)
+      //     options.onError?.(result.error)
+      //   }
 
-        if (result.data) {
-          setData(result.data)
-          options.onSuccess?.(result.data)
-        }
-      } finally {
-        setIsLoading(false)
-        options.onComplete?.()
-      }
+      //   if (result.data) {
+      //     setData(result.data)
+      //     options.onSuccess?.(result.data)
+      //   }
+      // } finally {
+      //   setIsLoading(false)
+      //   options.onComplete?.()
+      // }
     },
     [action, options]
   )
